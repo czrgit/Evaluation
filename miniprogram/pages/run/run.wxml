@@ -1,0 +1,14 @@
+<view class='container'>
+  <view class='title'>文章管理</view>
+  <block  wx:for="{{article}}" wx:key="index">
+		<!-- <view bindtap="goInfo" data-id='{{item.aid}}'> -->
+			<van-card class="card" title-class="card-title" tag="{{item.Recommended?'精品':'热门'}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{ item.img }}">
+        <view slot="footer">
+          <van-button type='primary' size="small" data-id="{{item._id}}" catchtap='goModify'>修改</van-button>
+					<van-button type='danger' size="small" data-id="{{item._id}}" catchtap='dele'>删除</van-button>
+        </view>
+      </van-card>
+		<!-- </view> -->     
+  </block>
+
+</view>

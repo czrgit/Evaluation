@@ -1,0 +1,11 @@
+<view class='container'>
+  <view class='title'>小程序后台管理</view>
+  <view class='avatarBox'>
+    <image src='{{user.avatarUrl}}' class='avatar'></image>
+    <text>{{user.nickName}}</text>
+  </view>
+	<view class='btnBox'>
+		<button catchtap='goAdd' type='warn' plain>添加文章</button>
+		<button catchtap='goRun' type='primary' plain>管理文章</button>
+	</view>
+</view>

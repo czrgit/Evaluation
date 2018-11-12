@@ -1,0 +1,24 @@
+<view class='container'>
+  <view class='title'>热门评测</view>
+  <view class='list-item' wx:for="{{article1}}" wx:key="index">
+    <view class='list-item-image' bindtap='goInfo' data-id="{{item._id}}">
+      <image mode='aspectFill' class='list-item-image-img' src='{{item.img}}'></image>
+      <view class='avatar' wx:if="{{item.Recommended}}">
+        <text class='text'>精品</text>
+      </view>
+      <view class='avatar' wx:elif="{{item.Popular}}">
+        <text class='text'>热门</text>
+      </view>
+    </view>
+    <view class='list-item-text'>
+      <view class='list-item-text-title'>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='list-item-text-content'>
+        <!-- <import src='../../wxParse/wxParse.wxml' />
+        <template class="text" is='wxParse' data='{{wxParseData:article.nodes}}' /> -->
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</view>

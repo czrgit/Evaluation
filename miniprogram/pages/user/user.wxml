@@ -1,0 +1,9 @@
+<view>
+  <van-dialog id="van-dialog" title="{{title}}" message="{{message}}" confirm-button-open-type="getUserInfo" bind:getuserinfo="bindgetuserinfo" show="{{show}}" show-cancel-button="true" cancel-button-text="返回首页" bind:cancel="goToIndex" />
+  <view class='avatarBox'>
+    <image src='{{user.avatarUrl}}' class='avatar'></image>
+		<text>{{user.nickName}}</text>
+  </view>
+  <van-cell icon='gift' title="我的收藏" data-id="{{user._id}}" bind:click="inList" is-link />
+	<van-cell wx:if='{{_openid=="oCbNc5cEqB7hvfEkzYtc6RG4bCZk"}}' icon='discount' title="后台管理" bind:click="goAdmin" data-id="{{user._id}}" is-link />
+</view>

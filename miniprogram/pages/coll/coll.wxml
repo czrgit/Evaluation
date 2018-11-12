@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='title'>我的收藏</view>
+
+	<view wx:if="{{hidden}}" class='hidden' >
+		<text class='text'>你的收藏栏还是空的!</text>
+		<van-button type="primary" bind:click="addArticle" class='addButton'> 请去添加些文章</van-button>
+	</view>
+  <block  wx:for="{{coll}}" wx:key="index">
+		<view bindtap="goInfo" data-id='{{item.aid}}'>
+			<van-card class="card" title-class="card-title" tag="{{item.Recommended?'精品':'热门'}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{ item.img }}">
+        <view slot="footer">
+          <van-button size="small" data-id="{{item._id}}" catchtap='noColl'>取消收藏</van-button>
+        </view>
+      </van-card>
+		</view>
+      
+  </block>
+
+</view>

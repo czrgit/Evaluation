@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='title'>{{article1.title}}</view>
+  <view class='header'>
+    <view class='author'>作者:{{article1.Author}}</view>	
+    <view wx:if="{{article1.Recommended}}" class='tuijian'>精品推荐</view>
+    <view wx:elif="{{article1.Popular}}" class='tuijian'>热门推荐</view>	
+  </view>
+	<view class='author'>日期:{{date}}</view>
+  <view class='image'>
+    <image src='{{article1.img}}' class='img' ></image>
+  </view>
+  <view class='content'>
+    <text>{{article1.content}}</text>
+  </view>
+  <view class='icon'>
+    <van-icon wx:if="{{love}}" color='red' name="like-o" catch:click="collection" size='70rpx' />
+    <van-icon wx:else="{{love}}" name="like-o" catch:click="collection" size='70rpx' />
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view class='container'>
+  <view class='title'>添加文章</view>
+  <form bindsubmit="formSubmit">
+      <van-cell-group>
+        <van-field name="title" required clearable label="文章标题" placeholder="请输入标题名" />
+
+        <van-field name="Author" label="作者" placeholder="请输入作者名" required />
+
+        <van-field name="content" label="文章内容" type="textarea" placeholder="请输入详细内容" required autosize />
+
+        <van-field name="img" value="{{ imgUrl }}" required center clearable label="文章图片" placeholder="请插入图片" use-button-slot>
+          <van-button slot="button" bind:click="upload" size="small" type="primary">插入图片</van-button>
+        </van-field>
+        <view class='tuijian'>
+          <text class='text'>精品推荐</text>
+          <van-switch checked="{{ checked1 }}" name="Recommended" bind:change="onChange1" />
+        </view>
+        <view class='tuijian'>
+          <text class='text'>热门推荐</text>
+          <van-switch checked="{{ checked2 }}" name="Popular" bind:change="onChange2" />
+        </view>
+      </van-cell-group>
+    <view>
+      <button block class='img' type="primary" plain form-type='submit'>提交</button>
+    </view>
+
+  </form>
+</view>

@@ -1,0 +1,10 @@
+.avatarBox{
+	padding: 50rpx 275rpx;
+	text-align: center;
+}
+
+.avatar{
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 200rpx;
+}

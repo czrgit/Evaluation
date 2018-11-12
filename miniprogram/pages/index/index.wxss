@@ -1,0 +1,99 @@
+.container{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.selection{
+	border-bottom: 4px solid #ddd;
+}
+.slide-image{
+	display: block;
+	width: 100%;
+}
+.header{
+	border-left: 2px solid limegreen;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60rpx;
+	padding: 0 10rpx 0 10rpx;
+	margin: 10rpx 0 10rpx 0;
+}
+.text-all{
+	color: green;
+	font-size: 11pt;
+}
+.content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.content-item{
+	height: 200rpx;
+	width: 45%;
+	margin: 5px;
+	position: relative;
+}
+.content-item image{
+	width: 100%;
+	height: 100%;
+}
+.content-item-text{
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	font-size: 13pt;
+	background: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.8));
+	height: 125rpx;
+	width: 98%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0 1% 1% 1%;
+	overflow: hidden;
+}
+.content-item-text text{
+	overflow: hidden;
+	height: 50rpx;
+}
+.list-item{
+	height: 550rpx;
+	width: 100%;
+}
+.list-item-image{
+	height: 300rpx;
+	width: 100%;
+	position: relative;
+}
+.list-item-image-img{
+	height: 100%;
+	width: 100%;
+}
+.list-item-text{
+	height: 200rpx;
+	width: 96%;
+	margin-top: 20rpx;
+	padding: 0 2% 0 2%;
+}
+.list-item-text-title{
+	font-size: 12pt;
+
+}
+.list-item-text-content{
+	width: 100%;
+	height: 180rpx;	
+}
+.list-item-text-content text{
+	text-indent:2em;
+	font-size: 11pt;
+	color: #888;	
+	width: 100%;	
+	height: 150rpx;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:4;
+}

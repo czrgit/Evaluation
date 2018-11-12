@@ -1,0 +1,45 @@
+{
+	"cloud": true,
+	"pages": [
+		"pages/index/index",
+		"pages/user/user",
+		"pages/info/info",
+		"pages/list/list",
+		"pages/add/add",
+		"pages/popular/popular",
+		"pages/recommended/recommended",
+		"pages/coll/coll",
+		"pages/admin/admin",
+		"pages/run/run",
+		"pages/modify/modify"
+	],
+	"window": {
+		"backgroundColor": "#F6F6F6",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#F6F6F6",
+		"navigationBarTitleText": "小黑测评",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "image/1.png",
+				"selectedIconPath": "image/01.png"
+			},
+			{
+				"pagePath": "pages/list/list",
+				"text": "评测",
+				"iconPath": "image/2.png",
+				"selectedIconPath": "image/02.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "个人中心",
+				"iconPath": "image/4.png",
+				"selectedIconPath": "image/04.png"
+			}
+		]
+	}
+}

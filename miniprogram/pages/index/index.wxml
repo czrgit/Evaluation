@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='selection'>
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="3000">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.img}}" data-id='{{item._id}}' catchtap='goInfo' class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='selection'>
+    <view class='header'>
+      <text>精品推荐</text>
+      <text class='text-all' catchtap='goRecommended'>全部精品</text>
+    </view>
+    <view class='content'>
+      <block wx:for="{{article}}" wx:key="index">
+        <view class='content-item' bindtap='goInfo' data-id="{{item._id}}">
+          <image src='{{item.img}}'></image>
+          <view class='content-item-text'>
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view>
+    <view class='header'>
+      <text>热门评测</text>
+      <text class='text-all' catchtap='goPopular'>全部热评</text>
+    </view>
+    <view class='list-item' wx:for="{{Popular}}" wx:key="index">
+      <view class='list-item-image' bindtap='goInfo' data-id="{{item._id}}">
+        <image class='list-item-image-img' src='{{item.img}}'></image>
+      </view>
+      <view class='list-item-text'>
+        <view class='list-item-text-title'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='list-item-text-content'>
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

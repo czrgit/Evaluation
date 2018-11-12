@@ -1,0 +1,92 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"uglifyFileName": false
+	},
+	"appid": "wx224ba50f8c5b1e70",
+	"projectname": "Evaluation",
+	"libVersion": "2.3.2",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": 0,
+					"name": "info",
+					"pathName": "pages/info/info",
+					"query": "id=W-L8AbdokuiP-QGz"
+				},
+				{
+					"id": 1,
+					"name": "add",
+					"pathName": "pages/add/add",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "coll",
+					"pathName": "pages/coll/coll",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "pages/list/list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "popular",
+					"pathName": "pages/popular/popular",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "admin",
+					"pathName": "pages/admin/admin",
+					"query": "id=W-J5dLdokuiP8vWT"
+				},
+				{
+					"id": -1,
+					"name": "run",
+					"pathName": "pages/run/run",
+					"query": "id=W-J5dLdokuiP8vWT"
+				},
+				{
+					"id": 8,
+					"name": "mdify",
+					"pathName": "pages/modify/modify",
+					"query": "id=W-MB6XhEiJmgZGNO"
+				}
+			]
+		}
+	}
+}
